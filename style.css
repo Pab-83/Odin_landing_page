@@ -1,20 +1,17 @@
 body {
-    background-color: blue;
-    margin-left : 50px;
-    margin-right: 50px;
-    margin-top: 0;
+    background-color: #1F2937;
 }
 
 .header{
     display: flex;
     align-items: center;
-    justify-content: space-around;
-    gap: 350px;
-    margin-bottom: 50px;
+    justify-content: space-between;
+    margin-bottom: 100px;
 }
 
 .header img {
     border-radius: 50%;
+    align-self: center;
 }
 
 
@@ -22,32 +19,94 @@ body {
     display: flex;
     list-style: none;
     align-items: center;
-    justify-content: start;
+    gap: 10px;
 }
 
 .navigation li {
-    margin-left: 10px
-
+    color: #E5E7EB;
+    font-size: 18px;
+    font-weight: 500;
 }
 
 .main {
     display: flex;
-    align-items: center;
-    justify-content: space-around;
+    align-items: start;
+    justify-items: center;
+    gap: 50px;
+    margin-bottom: 100px;
 }
 
 .main .left_main {
     display: flex;
     flex-direction: column;
+    justify-content: start;
+    gap: 10px;
+    margin-left: 200px;
 }
 
-.left_main p{
+.left_main #title{
+    font-weight: bolder;
+    font-style: oblique;
+    font-size: 48px;
+    width: 500px;
+    text-align: left;
+    color: whitesmoke;
+    margin: 0;
+}
+
+.left_main p {
+    font-style: italic;
+    font-weight: 800;
+    font-size: 18px;
+    text-align: left;
+    color: whitesmoke;
+    width: 500px;
 }
 
 .main button {
     width: fit-content;
     height: auto;
-    background-color: darkblue;
+    background-color: #425BDA;
     color: white;
     font-weight: bolder;
+    font-size: 18px;
+}
+
+.main .images_container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contents {
+    display: flex;
+    background-color: rgb(15, 100, 100);
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.contents h2 {
+    display: flex;
+    align-self: center;
+    margin-top: 50px;
+}
+
+.images_descriptions {
+    display: flex;
+    list-style: none;
+    align-items: flex-start;
+    gap: 50px;
+}
+
+.images_descriptions li{
+    display: flex;
+    flex-direction: column;
+}
+
+.images_descriptions li p {
+    display: block;
+    text-align: center;
+    font-size: 18px;
+    width: 250px;
 }
