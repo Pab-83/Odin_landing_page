@@ -63,13 +63,15 @@ body {
     width: 500px;
 }
 
-.main button {
-    width: fit-content;
+button {
+    width:fit-content;
     height: auto;
     background-color: #425BDA;
     color: white;
     font-weight: bolder;
     font-size: 18px;
+    border-style: groove;
+    border-radius: 12px;
 }
 
 .main .images_container {
@@ -109,4 +111,77 @@ body {
     text-align: center;
     font-size: 18px;
     width: 250px;
+}
+
+.quotes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: grey;
+}
+
+.quotes p{
+    font-size: 36px;
+    font-style: italic;
+    color: aliceblue;
+    width: 600px;
+    text-align: left;
+}
+
+.quotes .author {
+    font-size: 18px;
+    font-style: italic;
+    font-weight: bold;
+    color: black;
+    text-align: right;
+}
+
+.sign_up {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: whitesmoke;
+}
+
+.blue_square {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #425BDA;
+    width: 800px;
+    height: 150px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    border-radius: 12px;
+}
+
+.sign_up .begging_text{
+    display: flex;
+    flex-direction: column;
+}
+
+.begging_text #catchphrase {
+    font-size: 20px;
+    font-weight: bolder;
+    font-style: italic;
+    color: aliceblue;
+    margin: 0;
+}
+
+.begging_text #instructions {
+    font-size: 16px;
+    font-weight: bolder;
+    font-style: italic;
+    color:aliceblue;
+    margin: 0
+}
+
+.blue_square button {
+    align-self: center;
+    width: 120px;
+    height: 40px;
+    border-style: ridge;
+    border-color: whitesmoke;
+    border-width: 2px;
 }
